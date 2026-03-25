@@ -20,15 +20,15 @@
   },
   "homepage": "https://github.com/rut5/Webshop-ERD#readme",
   "devDependencies": {
+    "@prisma/client": "^6.19.2",
     "@types/express": "^5.0.6",
     "nodemon": "^3.1.14",
+    "prisma": "^6.19.2",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.2"
   },
   "dependencies": {
-    "@prisma/client": "6.17",
     "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "prisma": "6.17"
+    "express": "^5.2.1"
   }
 }
