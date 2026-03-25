@@ -1,0 +1,34 @@
+{
+  "name": "webshop-erd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rut5/Webshop-ERD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rut5/Webshop-ERD/issues"
+  },
+  "homepage": "https://github.com/rut5/Webshop-ERD#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@prisma/client": "6.17",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "prisma": "6.17"
+  }
+}
