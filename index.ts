@@ -54,6 +54,26 @@ app.patch("/products/:productId", async (req, res) => {
 
 // -- END OF CODE FROM ASSIGNMENT -- //
 
+
+// 4. Remove an order
+app.delete("/orders/:orderId", async (req, res) => {
+  try {
+    const { orderId } = req.params;
+
+    await prisma.orderItem.deleteMany({
+      where: { order_id: Number(orderId) }
+    });
+
+    const deletedOrder = await prisma.order.delete({
+      where: { id: Number(orderId) }
+    });
+
+    res.json({ message: "Order and items deleted", deletedOrder });
+  } catch (error) {
+    res.status(500).send(error instanceof Error ? error.message : "Unknown error");
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
